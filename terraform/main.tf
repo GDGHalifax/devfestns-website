@@ -16,7 +16,7 @@ resource "cloudflare_record" "github_pages_apex_1" {
   name    = "devfestns.com"
   content = "185.199.108.153"
   type    = "A"
-  proxied = true
+  proxied = false
 }
 
 resource "cloudflare_record" "github_pages_apex_2" {
@@ -24,7 +24,7 @@ resource "cloudflare_record" "github_pages_apex_2" {
   name    = "devfestns.com"
   content = "185.199.109.153"
   type    = "A"
-  proxied = true
+  proxied = false
 }
 
 resource "cloudflare_record" "github_pages_apex_3" {
@@ -32,7 +32,7 @@ resource "cloudflare_record" "github_pages_apex_3" {
   name    = "devfestns.com"
   content = "185.199.110.153"
   type    = "A"
-  proxied = true
+  proxied = false
 }
 
 resource "cloudflare_record" "github_pages_apex_4" {
@@ -40,7 +40,7 @@ resource "cloudflare_record" "github_pages_apex_4" {
   name    = "devfestns.com"
   content = "185.199.111.153"
   type    = "A"
-  proxied = true
+  proxied = false
 }
 
 resource "cloudflare_record" "github_pages_www" {
@@ -48,5 +48,5 @@ resource "cloudflare_record" "github_pages_www" {
   name    = "www"
   content = "gdghalifax.github.io"
   type    = "CNAME"
-  proxied = true
+  proxied = false
 }
