@@ -4,6 +4,10 @@
 [![Deploy](https://github.com/GDGHalifax/devfestns-website/actions/workflows/deploy.yml/badge.svg)](https://github.com/GDGHalifax/devfestns-website/actions/workflows/deploy.yml)
 [![CodeQL](https://github.com/GDGHalifax/devfestns-website/actions/workflows/codeql.yml/badge.svg)](https://github.com/GDGHalifax/devfestns-website/actions/workflows/codeql.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=GDGHalifax_devfestns-website&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=GDGHalifax_devfestns-website)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=GDGHalifax_devfestns-website&metric=coverage)](https://sonarcloud.io/summary/new_code?id=GDGHalifax_devfestns-website)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=GDGHalifax_devfestns-website&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=GDGHalifax_devfestns-website)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=GDGHalifax_devfestns-website&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=GDGHalifax_devfestns-website)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=GDGHalifax_devfestns-website&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=GDGHalifax_devfestns-website)
 [![Known Vulnerabilities](https://snyk.io/test/github/GDGHalifax/devfestns-website/badge.svg)](https://snyk.io/test/github/GDGHalifax/devfestns-website)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
