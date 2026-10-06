@@ -46,10 +46,15 @@ function App() {
               <svg className="w-5 h-5 mr-2 text-google-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
               <span className="font-semibold text-sm sm:text-base">Dec 5, 2026</span>
             </div>
-            <div className="flex items-center text-slate-700 bg-slate-50 px-5 py-2.5 rounded-full border border-slate-200">
+            <a 
+              href={typeof navigator !== 'undefined' && /Mac|iPod|iPhone|iPad/.test(navigator.userAgent) ? "https://maps.apple/p/6uG9ZR9Q7Y.8AQ" : "https://maps.app.goo.gl/ZworZ4NuEP5fghMo6"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-slate-700 bg-slate-50 px-5 py-2.5 rounded-full border border-slate-200 hover:bg-slate-100 hover:text-google-blue hover:border-google-blue/30 transition-colors cursor-pointer"
+            >
               <svg className="w-5 h-5 mr-2 text-google-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
               <span className="font-semibold text-sm sm:text-base">Volta, Halifax & Virtual</span>
-            </div>
+            </a>
           </div>
 
           <div className="mt-12 px-4 sm:px-0 flex flex-col sm:flex-row justify-center items-center gap-4">
