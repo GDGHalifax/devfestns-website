@@ -11,14 +11,8 @@ provider "cloudflare" {
   api_token = var.cloudflare_api_token
 }
 
-data "cloudflare_zones" "devfestns" {
-  filter {
-    name = "devfestns.com"
-  }
-}
-
 resource "cloudflare_record" "github_pages_apex_1" {
-  zone_id = data.cloudflare_zones.devfestns.zones[0].id
+  zone_id = var.cloudflare_zone_id
   name    = "devfestns.com"
   value   = "185.199.108.153"
   type    = "A"
@@ -26,7 +20,7 @@ resource "cloudflare_record" "github_pages_apex_1" {
 }
 
 resource "cloudflare_record" "github_pages_apex_2" {
-  zone_id = data.cloudflare_zones.devfestns.zones[0].id
+  zone_id = var.cloudflare_zone_id
   name    = "devfestns.com"
   value   = "185.199.109.153"
   type    = "A"
@@ -34,7 +28,7 @@ resource "cloudflare_record" "github_pages_apex_2" {
 }
 
 resource "cloudflare_record" "github_pages_apex_3" {
-  zone_id = data.cloudflare_zones.devfestns.zones[0].id
+  zone_id = var.cloudflare_zone_id
   name    = "devfestns.com"
   value   = "185.199.110.153"
   type    = "A"
@@ -42,7 +36,7 @@ resource "cloudflare_record" "github_pages_apex_3" {
 }
 
 resource "cloudflare_record" "github_pages_apex_4" {
-  zone_id = data.cloudflare_zones.devfestns.zones[0].id
+  zone_id = var.cloudflare_zone_id
   name    = "devfestns.com"
   value   = "185.199.111.153"
   type    = "A"
@@ -50,13 +44,9 @@ resource "cloudflare_record" "github_pages_apex_4" {
 }
 
 resource "cloudflare_record" "github_pages_www" {
-  zone_id = data.cloudflare_zones.devfestns.zones[0].id
+  zone_id = var.cloudflare_zone_id
   name    = "www"
   value   = "gdghalifax.github.io"
   type    = "CNAME"
   proxied = true
-}
-
-output "cloudflare_nameservers" {
-  value = data.cloudflare_zones.devfestns.zones[0].name_servers
 }
