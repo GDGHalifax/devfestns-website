@@ -17,12 +17,12 @@ function App() {
               <span className="font-bold text-xl tracking-tight text-slate-800 sm:hidden">GDG</span>
             </div>
             <a 
-              href="https://app.advocu.com/public/gde/events/6ac253183b5fb933c2607baf?cfpid=6ac293681db70629779e559a" 
+              href="https://gdg.community.dev/events/details/google-gdg-halifax-presents-devfest-2026-nova-scotia-edition/cohost-gdg-halifax" 
               target="_blank" 
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-md font-medium text-white bg-google-blue hover:bg-[#3367d6] transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-google-blue"
             >
-              Apply to Speak
+              RSVP Now
             </a>
           </div>
         </div>
@@ -51,15 +51,23 @@ function App() {
             </div>
           </div>
 
-          <div className="mt-12 px-4 sm:px-0">
+          <div className="mt-12 px-4 sm:px-0 flex flex-col sm:flex-row justify-center items-center gap-4">
             <a 
-              href="https://app.advocu.com/public/gde/events/6ac253183b5fb933c2607baf?cfpid=6ac293681db70629779e559a" 
+              href="https://gdg.community.dev/events/details/google-gdg-halifax-presents-devfest-2026-nova-scotia-edition/cohost-gdg-halifax" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 border border-transparent text-lg font-bold rounded-md text-white bg-google-blue hover:bg-[#3367d6] focus:outline-none focus:ring-4 focus:ring-google-blue/30 transition-all shadow-md hover:shadow-lg"
             >
-              Apply to Speak
+              RSVP Now
               <svg className="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </a>
+            <a 
+              href="https://app.advocu.com/public/gde/events/6ac253183b5fb933c2607baf?cfpid=6ac293681db70629779e559a" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 border-2 border-google-blue text-lg font-bold rounded-md text-slate-900 bg-transparent hover:bg-blue-50 focus:outline-none focus:ring-4 focus:ring-google-blue/30 transition-all shadow-sm hover:shadow-md"
+            >
+              Apply to Speak
             </a>
           </div>
         </section>

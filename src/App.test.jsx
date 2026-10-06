@@ -9,9 +9,9 @@ describe('App', () => {
     expect(titleElements[0]).toBeInTheDocument();
   });
 
-  it('renders the Apply to Speak button', () => {
+  it('renders the RSVP Now button', () => {
     render(<App />);
-    const buttons = screen.getAllByText(/Apply to Speak/i);
+    const buttons = screen.getAllByText(/RSVP Now/i);
     expect(buttons.length).toBeGreaterThan(0);
   });
 });
