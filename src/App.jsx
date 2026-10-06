@@ -151,12 +151,15 @@ function App() {
               </div>
             </div>
             
-            <a 
-              href="mailto:gdghalifax@gmail.com" 
-              className="inline-flex items-center px-6 py-3 border-2 border-slate-300 text-base font-bold rounded-md text-slate-700 bg-transparent hover:bg-slate-100 hover:border-slate-400 focus:outline-none focus:ring-4 focus:ring-slate-100 transition-all"
+            <button 
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "mailto:" + "gdghalifax" + "@" + "gmail.com";
+              }}
+              className="inline-flex items-center px-6 py-3 border-2 border-slate-300 text-base font-bold rounded-md text-slate-700 bg-transparent hover:bg-slate-100 hover:border-slate-400 focus:outline-none focus:ring-4 focus:ring-slate-100 transition-all cursor-pointer"
             >
               Become a Sponsor
-            </a>
+            </button>
           </div>
         </section>
       </main>
