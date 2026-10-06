@@ -140,11 +140,11 @@ function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold text-slate-800 mb-12">Community Partners</h2>
             <div className="flex flex-wrap justify-center items-center gap-8 mb-12">
-              <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center w-64 h-32 hover:shadow-md transition-shadow">
+              <a href="https://immigratr.ca" target="_blank" rel="noopener noreferrer" className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center w-64 h-32 hover:shadow-md transition-shadow">
                 <div className="flex items-center text-2xl font-black text-slate-800">
-                  <span className="text-google-blue mr-2">HM</span> Emigrator
+                  <span className="text-google-blue mr-2">H.M.</span> Immigratr
                 </div>
-              </div>
+              </a>
               {/* Additional sponsor placeholders */}
               <div className="bg-slate-100 border-2 border-dashed border-slate-200 rounded-2xl w-64 h-32 flex items-center justify-center opacity-70">
                 <span className="text-slate-400 font-medium">Your Logo Here</span>
