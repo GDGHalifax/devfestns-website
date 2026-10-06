@@ -30,4 +30,23 @@ describe('App', () => {
     // Restore window.location
     window.location = originalLocation;
   });
+  it('renders Google Maps link for non-Apple devices', () => {
+    Object.defineProperty(navigator, 'userAgent', {
+      value: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+      configurable: true
+    });
+    render(<App />);
+    const mapsLink = screen.getByText(/Volta, Halifax & Virtual/i).closest('a');
+    expect(mapsLink).toHaveAttribute('href', 'https://maps.app.goo.gl/ZworZ4NuEP5fghMo6');
+  });
+
+  it('renders Apple Maps link for Apple devices', () => {
+    Object.defineProperty(navigator, 'userAgent', {
+      value: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15',
+      configurable: true
+    });
+    render(<App />);
+    const mapsLink = screen.getByText(/Volta, Halifax & Virtual/i).closest('a');
+    expect(mapsLink).toHaveAttribute('href', 'https://maps.apple/p/6uG9ZR9Q7Y.8AQ');
+  });
 });
