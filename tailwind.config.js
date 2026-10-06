@@ -13,6 +13,9 @@ export default {
           yellow: '#FBBC04',
           green: '#34A853',
         }
+      },
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
       }
     },
   },

@@ -5,8 +5,8 @@ import App from './App';
 describe('App', () => {
   it('renders the DevFest title', () => {
     render(<App />);
-    const titleElement = screen.getByText(/DevFest/i);
-    expect(titleElement).toBeInTheDocument();
+    const titleElements = screen.getAllByText(/DevFest/i);
+    expect(titleElements[0]).toBeInTheDocument();
   });
 
   it('renders the Apply to Speak button', () => {
