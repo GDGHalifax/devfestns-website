@@ -42,7 +42,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
       - name: Build
-        run: npm run build
+        run: |
+          npm run build
+          echo "<!-- Version: $(node -p "require('./package.json').version") -->" >> dist/index.html
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
@@ -52,3 +54,21 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify Deployment
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "Expected version: $VERSION"
+          URL="${{ steps.deployment.outputs.page_url }}"
+          echo "Testing URL: $URL"
+          for i in {1..10}; do
+            echo "Attempt $i: Fetching $URL"
+            HTML=$(curl -sL --fail "$URL") || true
+            if echo "$HTML" | grep -q "<!-- Version: $VERSION -->"; then
+              echo "Deployment verified! Version $VERSION is live."
+              exit 0
+            fi
+            echo "Version $VERSION not found yet. Retrying in 15s..."
+            sleep 15
+          done
+          echo "Deployment verification failed! Version $VERSION was not found on the live site."
+          exit 1
