@@ -1,3 +1,4 @@
+/* global __APP_VERSION__ */
 import React from 'react';
 
 function App() {
@@ -169,6 +170,7 @@ function App() {
             <div className="w-2 h-2 rounded-full bg-google-green"></div>
           </div>
           <p className="font-medium text-sm text-slate-400">© 2026 DevFest Nova Scotia. All rights reserved.</p>
+          <p className="mt-2 text-xs text-slate-500">v{__APP_VERSION__}</p>
         </div>
       </footer>
     </div>
