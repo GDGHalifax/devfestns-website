@@ -13,6 +13,7 @@ export default defineConfig({
     environment: 'happy-dom',
     setupFiles: './vitest.setup.js',
     coverage: {
+      provider: 'istanbul',
       reporter: ['text', 'html', 'clover', 'json', 'lcov'],
       exclude: ['src/main.jsx', 'eslint.config.js', 'postcss.config.js', 'tailwind.config.js', 'vite.config.js', 'vitest.setup.js'],
       thresholds: {
