@@ -5,7 +5,7 @@ This file contains rules and guidelines for AI agents working in this repository
 ## General Guidelines
 - **Granular Commits:** Commit and push changes frequently.
 - **Focus:** Never combine unrelated files or changes in one commit. Keep commits focused, granular, and descriptive.
-- **Testing:** Always run tests if they exist before committing changes. Ensure no regressions are introduced.
+- **Testing:** Always run tests if they exist before committing changes. Ensure no regressions are introduced. Maintain 100% test coverage for all code.
 - **Dependencies:** Do not introduce new dependencies unless explicitly asked by the user or absolutely necessary. 
 
 ## Communication
