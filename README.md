@@ -1,7 +1,11 @@
 # DevFest Nova Scotia 2026
 
-![Build Status](https://github.com/GDGHalifax/devfestns-website/actions/workflows/deploy.yml/badge.svg)
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+[![CI](https://github.com/GDGHalifax/devfestns-website/actions/workflows/ci.yml/badge.svg)](https://github.com/GDGHalifax/devfestns-website/actions/workflows/ci.yml)
+[![Deploy](https://github.com/GDGHalifax/devfestns-website/actions/workflows/deploy.yml/badge.svg)](https://github.com/GDGHalifax/devfestns-website/actions/workflows/deploy.yml)
+[![CodeQL](https://github.com/GDGHalifax/devfestns-website/actions/workflows/codeql.yml/badge.svg)](https://github.com/GDGHalifax/devfestns-website/actions/workflows/codeql.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=GDGHalifax_devfestns-website&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=GDGHalifax_devfestns-website)
+[![Known Vulnerabilities](https://snyk.io/test/github/GDGHalifax/devfestns-website/badge.svg)](https://snyk.io/test/github/GDGHalifax/devfestns-website)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Official website for **DevFest Nova Scotia 2026**, co-hosted by GDG Halifax and GDG Sydney. Join developers, students, and tech enthusiasts from across Atlantic Canada for a day of hands-on Cloud and AI workshops, agent-building codelabs, and community networking.
 
