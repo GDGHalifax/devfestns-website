@@ -14,4 +14,20 @@ describe('App', () => {
     const buttons = screen.getAllByText(/RSVP Now/i);
     expect(buttons.length).toBeGreaterThan(0);
   });
+
+  it('handles Become a Sponsor button click', () => {
+    // Mock window.location.href
+    const originalLocation = window.location;
+    delete window.location;
+    window.location = { href: '' };
+
+    render(<App />);
+    const sponsorButton = screen.getByText(/Become a Sponsor/i);
+    sponsorButton.click();
+
+    expect(window.location.href).toBe('mailto:gdghalifax@gmail.com');
+
+    // Restore window.location
+    window.location = originalLocation;
+  });
 });

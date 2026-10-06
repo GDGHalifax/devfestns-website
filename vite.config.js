@@ -12,5 +12,14 @@ export default defineConfig({
     globals: true,
     environment: 'happy-dom',
     setupFiles: './vitest.setup.js',
+    coverage: {
+      exclude: ['src/main.jsx', 'eslint.config.js', 'postcss.config.js', 'tailwind.config.js', 'vite.config.js', 'vitest.setup.js'],
+      thresholds: {
+        lines: 100,
+        functions: 100,
+        branches: 100,
+        statements: 100
+      }
+    }
   },
 })
