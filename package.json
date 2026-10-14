@@ -39,7 +39,7 @@
     "postcss": "^8.5.29",
     "semantic-release": "^25.0.9",
     "tailwindcss": "^3.4.19",
-    "vite": "^8.3.2",
+    "vite": "^8.3.4",
     "vitest": "^5.0.3"
   },
   "overrides": {
